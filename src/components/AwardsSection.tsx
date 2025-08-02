@@ -35,7 +35,7 @@ const AwardsSection = () => {
   ];
 
   return (
-    <section id="awards" className="py-20 bg-background">
+    <section id="awards" className="py-20 bg-background paisley-pattern">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-cultural bg-clip-text text-transparent">
@@ -54,11 +54,11 @@ const AwardsSection = () => {
             return (
               <div
                 key={index}
-                className="bg-card rounded-xl p-6 shadow-soft hover:shadow-cultural transition-all duration-300 group hover:scale-105 animate-fade-in"
+                className="traditional-card p-6 hover:shadow-cultural transition-all duration-300 group hover:scale-105 animate-fade-in lotus-accent"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 bg-gradient-cultural rounded-lg flex items-center justify-center shadow-cultural">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-cultural">
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <span className="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
@@ -75,14 +75,14 @@ const AwardsSection = () => {
                 </p>
 
                 {/* Decorative element */}
-                <div className="mt-4 w-8 h-1 bg-gradient-cultural rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="mt-4 w-8 h-1 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             );
           })}
         </div>
 
         {/* Achievement Summary */}
-        <div className="bg-gradient-cultural rounded-xl p-6 text-white shadow-cultural relative overflow-hidden">
+        <div className="bg-tertiary rounded-xl p-6 text-white shadow-cultural relative overflow-hidden cultural-border">
           <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full -translate-y-10 translate-x-10"></div>
           <div className="absolute bottom-0 left-0 w-16 h-16 bg-white/10 rounded-full translate-y-8 -translate-x-8"></div>
           
