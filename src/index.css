@@ -8,43 +8,43 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Cultural Arts Inspired Design System */
-    --background: 355 20% 97%;
-    --foreground: 340 15% 15%;
+    /* Traditional Indian Cultural Design System */
+    --background: 42 15% 96%;
+    --foreground: 20 14% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 340 15% 15%;
+    --card-foreground: 20 14% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 340 15% 15%;
+    --popover-foreground: 20 14% 20%;
 
-    /* Deep Cultural Purple - Main Brand */
-    --primary: 280 70% 45%;
+    /* Deep Saffron - Sacred & Spiritual */
+    --primary: 20 90% 48%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 280 60% 65%;
+    --primary-glow: 20 85% 65%;
 
-    /* Warm Cultural Orange */
-    --secondary: 25 85% 60%;
-    --secondary-foreground: 340 15% 15%;
+    /* Royal Emerald - Nature & Prosperity */
+    --secondary: 140 60% 35%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Soft Cream */
-    --muted: 45 30% 95%;
-    --muted-foreground: 340 15% 45%;
+    /* Warm Cream - Heritage */
+    --muted: 42 25% 93%;
+    --muted-foreground: 20 14% 50%;
 
-    /* Golden Accent */
-    --accent: 45 90% 65%;
-    --accent-foreground: 340 15% 15%;
+    /* Golden Marigold - Celebration */
+    --accent: 48 95% 55%;
+    --accent-foreground: 20 14% 20%;
 
-    /* Cultural Teal */
-    --tertiary: 180 65% 45%;
+    /* Deep Indigo - Wisdom & Depth */
+    --tertiary: 235 65% 35%;
     --tertiary-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 320 20% 90%;
-    --input: 320 20% 94%;
-    --ring: 280 70% 45%;
+    --border: 42 15% 88%;
+    --input: 42 15% 92%;
+    --ring: 20 90% 48%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
