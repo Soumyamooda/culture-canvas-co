@@ -66,7 +66,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-muted/20 mandala-pattern">
+    <section id="services" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-cultural bg-clip-text text-transparent">
@@ -88,7 +88,7 @@ const ServicesSection = () => {
                 onClick={() => setActiveTab(index)}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-full transition-all duration-300 ${
                   activeTab === index
-                    ? `bg-primary text-white shadow-cultural`
+                    ? `bg-gradient-cultural text-white shadow-cultural`
                     : "bg-background text-muted-foreground hover:text-primary hover:bg-primary/10"
                 }`}
               >
@@ -100,11 +100,11 @@ const ServicesSection = () => {
         </div>
 
         {/* Active Service Display */}
-        <div className="traditional-card p-8 lg:p-12 animate-fade-in">
+        <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-soft animate-fade-in">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center space-x-4 mb-6">
-                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-cultural">
+                <div className="w-16 h-16 bg-gradient-cultural rounded-2xl flex items-center justify-center shadow-cultural">
                   {React.createElement(services[activeTab].icon, { className: "w-8 h-8 text-white" })}
                 </div>
                 <div>
@@ -142,7 +142,7 @@ const ServicesSection = () => {
 
             {/* Visual Element */}
             <div className="relative">
-              <div className="bg-tertiary rounded-2xl p-8 text-white shadow-cultural relative overflow-hidden cultural-border">
+              <div className="bg-gradient-cultural rounded-2xl p-8 text-white shadow-cultural relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
                 

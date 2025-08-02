@@ -2,14 +2,14 @@ import { Eye, Target, Sparkles } from "lucide-react";
 
 const VisionMission = () => {
   return (
-    <section className="py-20 bg-muted/30 paisley-pattern">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8">
             <div className="animate-fade-in">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-cultural">
+                <div className="w-12 h-12 bg-gradient-cultural rounded-lg flex items-center justify-center shadow-cultural">
                   <Eye className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-primary">Our Vision</h3>
@@ -23,7 +23,7 @@ const VisionMission = () => {
 
             <div className="animate-slide-in">
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center shadow-warm">
+                <div className="w-12 h-12 bg-gradient-warm rounded-lg flex items-center justify-center shadow-warm">
                   <Target className="w-6 h-6 text-foreground" />
                 </div>
                 <h3 className="text-2xl font-bold text-secondary">Our Mission</h3>
@@ -38,7 +38,7 @@ const VisionMission = () => {
 
           {/* Artistic Illustration */}
           <div className="relative animate-scale-in">
-            <div className="relative bg-primary rounded-2xl p-8 shadow-cultural overflow-hidden cultural-border">
+            <div className="relative bg-gradient-cultural rounded-2xl p-8 shadow-cultural overflow-hidden">
               {/* Decorative elements */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>

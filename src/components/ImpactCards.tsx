@@ -47,7 +47,7 @@ const ImpactCards = () => {
   ];
 
   return (
-    <section className="py-20 bg-background mandala-pattern">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-cultural bg-clip-text text-transparent">
@@ -66,14 +66,14 @@ const ImpactCards = () => {
             return (
               <div
                 key={index}
-                className="traditional-card group relative overflow-hidden p-8 hover:shadow-cultural transition-all duration-500 hover:scale-105 animate-fade-in lotus-accent"
+                className="group relative overflow-hidden bg-card rounded-2xl p-8 shadow-soft hover:shadow-cultural transition-all duration-500 hover:scale-105 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Background gradient overlay */}
-                <div className={`absolute inset-0 bg-${impact.color}/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                <div className={`absolute inset-0 bg-${impact.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
                 
                 <div className="relative z-10 text-center">
-                  <div className={`w-16 h-16 bg-${impact.color} rounded-full flex items-center justify-center mx-auto mb-6 shadow-cultural group-hover:animate-float`}>
+                  <div className={`w-16 h-16 bg-${impact.gradient} rounded-full flex items-center justify-center mx-auto mb-6 shadow-${impact.color === 'primary' ? 'cultural' : 'warm'} group-hover:animate-float`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   

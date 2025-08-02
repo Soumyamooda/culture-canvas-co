@@ -8,49 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Traditional Indian Cultural Design System */
-    --background: 42 15% 96%;
-    --foreground: 20 14% 20%;
+    /* Cultural Arts Inspired Design System */
+    --background: 355 20% 97%;
+    --foreground: 340 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 20 14% 20%;
+    --card-foreground: 340 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 14% 20%;
+    --popover-foreground: 340 15% 15%;
 
-    /* Deep Saffron - Sacred & Spiritual */
-    --primary: 20 90% 48%;
+    /* Deep Cultural Purple - Main Brand */
+    --primary: 280 70% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 20 85% 65%;
+    --primary-glow: 280 60% 65%;
 
-    /* Royal Emerald - Nature & Prosperity */
-    --secondary: 140 60% 35%;
-    --secondary-foreground: 0 0% 100%;
+    /* Warm Cultural Orange */
+    --secondary: 25 85% 60%;
+    --secondary-foreground: 340 15% 15%;
 
-    /* Warm Cream - Heritage */
-    --muted: 42 25% 93%;
-    --muted-foreground: 20 14% 50%;
+    /* Soft Cream */
+    --muted: 45 30% 95%;
+    --muted-foreground: 340 15% 45%;
 
-    /* Golden Marigold - Celebration */
-    --accent: 48 95% 55%;
-    --accent-foreground: 20 14% 20%;
+    /* Golden Accent */
+    --accent: 45 90% 65%;
+    --accent-foreground: 340 15% 15%;
 
-    /* Deep Indigo - Wisdom & Depth */
-    --tertiary: 235 65% 35%;
+    /* Cultural Teal */
+    --tertiary: 180 65% 45%;
     --tertiary-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 42 15% 88%;
-    --input: 42 15% 92%;
-    --ring: 20 90% 48%;
+    --border: 320 20% 90%;
+    --input: 320 20% 94%;
+    --ring: 280 70% 45%;
 
-    /* Subtle gradients for accents only */
+    /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-cultural: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1));
-    --gradient-warm: linear-gradient(135deg, hsl(var(--accent) / 0.1), hsl(var(--secondary) / 0.1));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.05), hsl(var(--tertiary) / 0.05));
+    --gradient-cultural: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--tertiary) / 0.8));
 
     /* Shadows */
     --shadow-cultural: 0 10px 30px -10px hsl(var(--primary) / 0.3);
@@ -126,47 +126,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-/* Artistic Cultural Patterns */
-@layer components {
-  .mandala-pattern {
-    background-image: radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.03) 2px, transparent 2px),
-                      radial-gradient(circle at 75% 75%, hsl(var(--accent) / 0.03) 2px, transparent 2px);
-    background-size: 40px 40px;
-    background-position: 0 0, 20px 20px;
-  }
-
-  .paisley-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 20c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm20-16c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16z' fill='%23f97316' fill-opacity='0.02'/%3E%3C/svg%3E");
-  }
-
-  .lotus-accent {
-    position: relative;
-  }
-
-  .lotus-accent::before {
-    content: '🪷';
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 24px;
-    opacity: 0.1;
-    pointer-events: none;
-  }
-
-  .cultural-border {
-    border-image: linear-gradient(45deg, hsl(var(--primary) / 0.2), hsl(var(--accent) / 0.2), hsl(var(--secondary) / 0.2)) 1;
-    border-style: solid;
-    border-width: 2px;
-  }
-
-  .traditional-card {
-    @apply bg-card rounded-xl shadow-soft border border-border/50;
-    background-image: 
-      radial-gradient(circle at 90% 10%, hsl(var(--primary) / 0.02) 1px, transparent 1px),
-      radial-gradient(circle at 10% 90%, hsl(var(--accent) / 0.02) 1px, transparent 1px);
-    background-size: 30px 30px;
   }
 }
