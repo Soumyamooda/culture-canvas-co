@@ -1,23 +1,27 @@
-import NewNavigation from "@/components/NewNavigation";
-import HeroCarousel from "@/components/HeroCarousel";
-import ImpactStats from "@/components/ImpactStats";
-import FeaturedArtists from "@/components/FeaturedArtists";
-import ExploreCategories from "@/components/ExploreCategories";
-import CTASection from "@/components/CTASection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import NewFooter from "@/components/NewFooter";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import VisionMission from "@/components/VisionMission";
+import ImpactCards from "@/components/ImpactCards";
+import ServicesSection from "@/components/ServicesSection";
+import EventsGallery from "@/components/EventsGallery";
+import TeamSection from "@/components/TeamSection";
+import AwardsSection from "@/components/AwardsSection";
+import PartnersSection from "@/components/PartnersSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <NewNavigation />
-      <HeroCarousel />
-      <ImpactStats />
-      <FeaturedArtists />
-      <ExploreCategories />
-      <TestimonialsSection />
-      <CTASection />
-      <NewFooter />
+      <Navigation />
+      <HeroSection />
+      <VisionMission />
+      <ImpactCards />
+      <ServicesSection />
+      <EventsGallery />
+      <TeamSection />
+      <AwardsSection />
+      <PartnersSection />
+      <Footer />
     </div>
   );
 };
