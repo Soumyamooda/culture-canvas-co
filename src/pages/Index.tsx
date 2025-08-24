@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import VisionMission from "@/components/VisionMission";
-import ImpactCards from "@/components/ImpactCards";
+import VisionMissionImpact from "@/components/VisionMissionImpact";
 import ServicesSection from "@/components/ServicesSection";
 import EventsGallery from "@/components/EventsGallery";
 import TeamSection from "@/components/TeamSection";
@@ -14,8 +13,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
-      <VisionMission />
-      <ImpactCards />
+      <VisionMissionImpact />
       <ServicesSection />
       <EventsGallery />
       <TeamSection />
