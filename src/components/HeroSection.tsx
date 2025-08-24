@@ -1,40 +1,60 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar } from "lucide-react";
-import heroImage from "@/assets/odyssey-hero.jpg"; // your uploaded image path
+import React from "react";
 
 const HeroSection = () => {
   return (
     <section
-      id="home"
-      className="relative h-screen overflow-hidden mt-16" // Added padding to offset navbar
+      className="relative w-full min-h-screen flex flex-col justify-center items-center text-center overflow-hidden"
+      style={{
+        backgroundImage: "url('/images/hero-bg.png')", // use your background
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      {/* Static Hero Image */}
-      <div
-        className="absolute inset-0 bg-no-repeat bg-cover bg-top"
-        style={{ backgroundImage: `url(${heroImage})`}}
-      ></div>
+      {/* Top Left Logo */}
+      <img
+        src="/images/jignasa-logo.png"
+        alt="Logo"
+        className="absolute top-6 left-6 w-32 md:w-40"
+      />
 
-      {/* Content Overlay */}
-      {/* <div className="absolute inset-0 flex items-center justify-center z-10">
-        <div className="text-center text-white max-w-4xl px-4">
-          <h1 className="text-5xl lg:text-7xl font-bold mb-6 animate-fade-in">
-            Odyssey: Celebrating Culture
-          </h1>
-          <p className="text-xl lg:text-2xl mb-8 text-white/90 animate-fade-in">
-            The Journey of India's Largest Culture Education Company
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in">
-            <Button variant="hero" className="group">
-              Explore Artists
-              <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button variant="outline" className="text-white border-white/30 hover:bg-white/10">
-              <Calendar className="mr-2 w-5 h-5" />
-              Post Your Requirement
-            </Button>
-          </div>
-        </div>
-      </div> */}
+      {/* Top Right Jagannath Logo with animation */}
+      <img
+        src="/images/jagannath-logo.png"
+        alt="Jagannath"
+        className="absolute top-6 right-6 w-20 md:w-24 animate-bounce-slow"
+      />
+
+      {/* Main Title */}
+      <h1 className="text-6xl md:text-8xl font-serif text-gray-800 drop-shadow-lg">
+        Odyssey
+      </h1>
+
+      {/* Subtitle */}
+      <p className="mt-4 text-lg md:text-2xl font-sans text-gray-700">
+        The Journey of India’s Largest Culture Education Company
+      </p>
+
+      {/* People Group Image */}
+      <div className="mt-12">
+        <img
+          src="/images/people-group.png"
+          alt="Community"
+          className="max-w-5xl mx-auto rounded-lg shadow-lg"
+        />
+      </div>
+
+      {/* Custom Animations */}
+      <style>
+        {`
+          @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+          }
+          .animate-bounce-slow {
+            animation: bounce-slow 3s ease-in-out infinite;
+          }
+        `}
+      </style>
     </section>
   );
 };
